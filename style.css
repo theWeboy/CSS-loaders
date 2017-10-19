@@ -1,0 +1,158 @@
+#particles-js{
+    overflow: hidden;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.jumbotron{
+    background-color: cornflowerblue;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    border-radius: 10px;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    border-radius: 50%;
+    position: relative;
+    margin: 50px;
+    display: inline-block;
+}
+.spinner:after, .spinner:before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* =============== Spinner 1 =======================*/
+
+.spinner-1:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 4px solid transparent;
+    border-top-color: blue;
+    border-bottom-color: blue;
+    animation: spinny 1.5s linear infinite;
+}
+
+@keyframes spinny {
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        transform: rotate(45deg) scale(1.2);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* =============== Spinner 2 =======================*/
+
+.spinner-2{
+    animation: spin 2s linear infinite;
+}
+.spinner-2:before, .spinner-2:after{
+
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    animation: bouncy2 1s ease-in infinite;
+
+}
+.spinner-2:after{
+    top: auto;
+    bottom: -10px;
+    animation: bouncy 1s ease-in infinite;
+}
+
+@keyframes bouncy {
+   0%,100%{
+       transform: translateY(0px);
+   }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes bouncy2 {
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* =============== Spinner 3 =======================*/
+
+.spinner-3{
+    background: none;
+    border: 6px solid #eee;
+}
+
+.spinner-3:after{
+    width: 6px;
+    height: 55px;
+    background: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2px;
+    transform-origin: top center;
+    animation: spin 2s linear infinite;
+}
+
+/* =============== Spinner 4 =======================*/
+
+.spinner-4:before, .spinner-4:after{
+    background: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: pulse 3s linear infinite;
+    opacity: 0;
+}
+
+.spinner-4:after{
+    animation: pulse 2s linear 2.3s infinite;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}

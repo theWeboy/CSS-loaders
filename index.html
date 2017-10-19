@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS-Loaders</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="animated fadeIn" style="background-color: lightskyblue">
+    <div id="particles-js">
+        <section id="head" style="margin-top: 10px;">
+            <div class="container" style="text-align: center">
+                <div class="jumbotron">
+                    <h1>CSS Loaders</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="loaders">
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" style="text-align: center">
+                    <div class="well" style="padding: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: white;border-radius: 15px">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12" style="padding-top: 14px;text-align: center">
+                                <p id="test" style="font-family: Poppins;font-size: 25px">Spinners</p>
+                                <hr style="width : auto; background-color: royalblue; border: none; height: 1px; overflow: hidden">
+                            </div>
+                        </div>
+
+                        <div class="spinner spinner-1" ></div>
+                        <div class="spinner spinner-2" ></div>
+                        <div class="spinner spinner-3" ></div>
+                        <div class="spinner spinner-4" ></div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js',
+            'particles.json', function () {
+                console.log('Particles json loaded...')
+            });
+    </script>
+</body>
+</html>
